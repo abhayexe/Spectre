@@ -1,0 +1,53 @@
+{
+    "device_id": "8ebc43aa-460f-5ec0-8536-d41994d8c33f",
+    "system": "Windows",
+    "node_name": "Abhay",
+    "release": "11",
+    "version": "10.0.26100",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "cpu_brand": "AMD Ryzen 5 5600H with Radeon Graphics",
+    "cpu_cores_physical": 6,
+    "cpu_cores_logical": 12,
+    "cpu_frequency": {
+        "current": 3301.0,
+        "min": "Unknown",
+        "max": 3301.0
+    },
+    "memory_total": 16539537408,
+    "memory_available": 4792176640,
+    "memory_percent_used": 71.0,
+    "disk_info": [
+        {
+            "device": "C:\\",
+            "mountpoint": "C:\\",
+            "file_system_type": "NTFS",
+            "total_size": 510580297728,
+            "used": 411394191360,
+            "free": 99186106368,
+            "percent_used": 80.6
+        },
+        {
+            "device": "G:\\",
+            "mountpoint": "G:\\",
+            "file_system_type": "FAT32",
+            "total_size": 16106127360,
+            "used": 4226576384,
+            "free": 11879550976,
+            "percent_used": 26.2
+        }
+    ],
+    "gpu_info": [
+        {
+            "id": 0,
+            "name": "NVIDIA GeForce RTX 2050",
+            "load": 0.0,
+            "memory_total": 4096.0,
+            "memory_used": 89.0,
+            "memory_free": 3876.0,
+            "temperature": 46.0
+        }
+    ],
+    "network_info": [],
+    "timestamp": 1741630322
+}
