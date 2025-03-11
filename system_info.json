@@ -1,5 +1,5 @@
 {
-    "device_id": "8ebc43aa-460f-5ec0-8536-d41994d8c33f",
+    "device_id": "99cef52b-b2c6-5d93-896b-005ecedec17d",
     "system": "Windows",
     "node_name": "Abhay",
     "release": "11",
@@ -15,17 +15,17 @@
         "max": 3301.0
     },
     "memory_total": 16539537408,
-    "memory_available": 4792176640,
-    "memory_percent_used": 71.0,
+    "memory_available": 5772394496,
+    "memory_percent_used": 65.1,
     "disk_info": [
         {
             "device": "C:\\",
             "mountpoint": "C:\\",
             "file_system_type": "NTFS",
             "total_size": 510580297728,
-            "used": 411394191360,
-            "free": 99186106368,
-            "percent_used": 80.6
+            "used": 412237672448,
+            "free": 98342625280,
+            "percent_used": 80.7
         },
         {
             "device": "G:\\",
@@ -43,11 +43,11 @@
             "name": "NVIDIA GeForce RTX 2050",
             "load": 0.0,
             "memory_total": 4096.0,
-            "memory_used": 89.0,
-            "memory_free": 3876.0,
-            "temperature": 46.0
+            "memory_used": 118.0,
+            "memory_free": 3847.0,
+            "temperature": 50.0
         }
     ],
     "network_info": [],
-    "timestamp": 1741630322
+    "timestamp": 1741701862
 }
