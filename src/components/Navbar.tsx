@@ -61,11 +61,13 @@ export default function Navbar() {
             <div className="flex h-16 justify-between">
               <div className="flex">
                 <div className="flex flex-shrink-0 items-center">
-                  <Link href="/">
-                    <span className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">
-                      DeviceSpecs
-                    </span>
-                  </Link>
+                <Link href="/" className="flex items-center space-x-2">
+  <img src="/logo.png" alt="Spectre Logo" className="h-10 w-10 object-contain" />
+  <span className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">
+    Spectre
+  </span>
+</Link>
+
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                   {navigation.map((item) => (

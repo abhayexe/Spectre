@@ -120,7 +120,7 @@ export default function Home() {
             <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
               <div className="relative -m-2 rounded-xl bg-gray-900/5 dark:bg-gray-700/30 p-2 ring-1 ring-inset ring-gray-900/10 dark:ring-white/10 lg:-m-4 lg:rounded-2xl lg:p-4">
                 <Image
-                  src="/tutorialpic1.png"
+                  src="/wallpaperdark.png"
                   alt="App screenshot"
                   width={2432}
                   height={1442}
