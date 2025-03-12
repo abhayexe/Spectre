@@ -60,6 +60,40 @@ export default function Login() {
                   </div>
                 </div>
               </div>
+              
+              {error === 'Email not confirmed' && (
+                <div className="mt-4 flex flex-col items-center border-t border-red-200 dark:border-red-800 pt-3">
+                <div className="w-full text-center">
+                  <p className="text-sm font-medium text-red-800 dark:text-red-200">
+                    Make sure to check your{" "}
+                    <a
+                      href="https://mail.google.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:underline dark:text-blue-400"
+                    >
+                      gmail
+                    </a>{" "}
+                    to confirm your email to Signup as supabase user
+                  </p>
+                </div>
+                <div className="mt-4 w-64 h-40 relative">
+                  <img 
+                    src="/supabaseemail.png" 
+                    alt="Supabase email verification" 
+                    className="rounded-md object-cover h-full w-full"
+                  />
+                </div>
+              </div>
+              )}
+              
+              {error === 'Invalid login credentials' && (
+                <div className="mt-4 border-t border-red-200 dark:border-red-800 pt-3">
+                  <p className="text-sm font-medium text-red-800 dark:text-red-200">
+                    Please check your email and password and try again.
+                  </p>
+                </div>
+              )}
             </div>
           )}
           
