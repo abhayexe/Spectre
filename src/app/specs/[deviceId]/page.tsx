@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { getDeviceSpecById } from '@/utils/supabase';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
+import QRCodeGenerator from '@/components/QRCodeGenerator';
 
 export default function DeviceSpecDetail() {
   const params = useParams();
@@ -12,6 +13,7 @@ export default function DeviceSpecDetail() {
   const [spec, setSpec] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [currentUrl, setCurrentUrl] = useState('');
 
   useEffect(() => {
     async function fetchSpecDetails() {
@@ -28,6 +30,11 @@ export default function DeviceSpecDetail() {
 
     if (deviceId) {
       fetchSpecDetails();
+    }
+    
+    // Set the current URL for QR code
+    if (typeof window !== 'undefined') {
+      setCurrentUrl(window.location.href);
     }
   }, [deviceId]);
 
@@ -110,6 +117,13 @@ export default function DeviceSpecDetail() {
             Detailed hardware and software information
           </p>
         </div>
+
+        {/* QR Code Generator Component */}
+        <QRCodeGenerator 
+          url={currentUrl} 
+          deviceName={spec.node_name} 
+          osInfo={spec.system} 
+        />
 
         <div className="bg-white dark:bg-gray-800 shadow overflow-hidden sm:rounded-lg">
           <div className="px-4 py-5 sm:px-6">
