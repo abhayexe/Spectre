@@ -1,0 +1,2 @@
+system,node_name,processor,cpu_brand,cpu_cores_physical,cpu_cores_logical,memory_total,disk_info,gpu_info
+Windows 11 Pro,DESKTOP-EXAMPLE,Intel64 Family 6 Model 158,Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz,8,8,16777216000,[{"device":"C:","mountpoint":"C:","total_size":512110190592,"used":322122547200,"free":189987643392,"percent_used":62.9,"file_system_type":"NTFS"}],[{"name":"NVIDIA GeForce RTX 2080","memory_total":8192,"memory_used":1024,"memory_free":7168,"temperature":65,"load":0.3}]
