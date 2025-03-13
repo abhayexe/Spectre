@@ -1,0 +1,8 @@
+{
+  "/page": "app/page.js",
+  "/automatic-specs/page": "app/automatic-specs/page.js",
+  "/login/page": "app/login/page.js",
+  "/specs/page": "app/specs/page.js",
+  "/ai-technician/page": "app/ai-technician/page.js",
+  "/specs/[deviceId]/page": "app/specs/[deviceId]/page.js"
+}
