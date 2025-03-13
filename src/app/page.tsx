@@ -131,18 +131,31 @@ export default function Home() {
               Collect and view detailed specifications for all your devices in one place. Choose how you want to collect your device information.
             </p>
             <div className="mt-10 flex items-center gap-x-6">
-              <Link
-                href="/automatic-specs"
-                className="rounded-md bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 transition-all duration-300 hover:shadow-indigo-500/30 hover:shadow-lg"
-              >
-                Automatic Specs Collection
-              </Link>
-              <Link
-                href="/manual-specs"
-                className="text-sm font-semibold leading-6 text-gray-300 hover:text-white transition-colors duration-300"
-              >
-                Manual Entry <span aria-hidden="true">→</span>
-              </Link>
+            <Link
+  href="/automatic-specs"
+  className="rounded-lg bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-500 bg-size-200 animate-gradient-x px-6 py-3 text-sm font-semibold text-white shadow-md hover:shadow-lg hover:shadow-indigo-500/30 transition-all duration-300 transform hover:-translate-y-0.5"
+>
+  Automatic Specs Collection
+</Link>
+
+<Link
+  href="/manual-specs"
+  className="mx-4 rounded-lg bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 bg-size-200 animate-gradient-x px-6 py-3 text-sm font-semibold text-white shadow-md hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 transform hover:-translate-y-0.5"
+>
+  Manual Entry <span aria-hidden="true" className="ml-1">→</span>
+</Link>
+
+<Link
+  href="/ai-technician"
+  className="rounded-lg bg-gradient-to-r from-emerald-600 via-teal-500 to-emerald-400 bg-size-200 animate-gradient-x px-6 py-3 text-sm font-semibold text-white shadow-md hover:shadow-lg hover:shadow-emerald-500/30 transition-all duration-300 transform hover:-translate-y-0.5 flex items-center"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M12 2a10 10 0 1 0 10 10H12V2Z" />
+    <path d="M12 2a10 10 0 0 1 10 10h-10V2Z" />
+    <path d="M12 12v10" />
+  </svg>
+  Talk to AI Technician
+</Link>
             </div>
           </div>
           <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
@@ -178,10 +191,7 @@ export default function Home() {
               <div className="flex flex-col rounded-2xl bg-gray-800/30 p-6 ring-1 ring-gray-700/30 hover:bg-gray-800/50 transition-colors duration-300">
                 <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-6 w-6 flex-none text-indigo-400">
-                    <path d="M21 6.375c0 2.692-4.03 4.875-9 4.875S3 9.067 3 6.375 7.03 1.5 12 1.5s9 2.183 9 4.875z" />
-                    <path d="M12 12.75c2.685 0 5.19-.586 7.078-1.609a8.283 8.283 0 001.897-1.384c.016.121.025.244.025.368C21 12.817 16.97 15 12 15s-9-2.183-9-4.875c0-.124.009-.247.025-.368a8.285 8.285 0 001.897 1.384C6.809 12.164 9.315 12.75 12 12.75z" />
-                    <path d="M12 16.5c2.685 0 5.19-.586 7.078-1.609a8.282 8.282 0 001.897-1.384c.016.121.025.244.025.368 0 2.692-4.03 4.875-9 4.875s-9-2.183-9-4.875c0-.124.009-.247.025-.368a8.284 8.284 0 001.897 1.384C6.809 15.914 9.315 16.5 12 16.5z" />
-                    <path d="M12 20.25c2.685 0 5.19-.586 7.078-1.609a8.282 8.282 0 001.897-1.384c.016.121.025.244.025.368 0 2.692-4.03 4.875-9 4.875s-9-2.183-9-4.875c0-.124.009-.247.025-.368a8.284 8.284 0 001.897 1.384C6.809 19.664 9.315 20.25 12 20.25z" />
+                    <path fillRule="evenodd" d="M11.078 2.25c-.917 0-1.699.663-1.85 1.567L9.05 4.889c-.02.12-.115.26-.297.348a7.493 7.493 0 00-.986.57c-.166.115-.334.126-.45.083L6.3 5.508a1.875 1.875 0 00-2.282.819l-.922 1.597a1.875 1.875 0 00.432 2.385l.84.692c.095.078.17.229.154.43a7.598 7.598 0 000 1.139c.015.2-.059.352-.153.43l-.841.692a1.875 1.875 0 00-.432 2.385l.922 1.597a1.875 1.875 0 002.282.818l1.019-.382c.115-.043.283-.031.45.082.312.214.641.405.985.57.182.088.277.228.297.35l.178 1.071c.151.904.933 1.567 1.85 1.567h1.844c.916 0 1.699-.663 1.85-1.567l.178-1.072c.02-.12.114-.26.297-.349.344-.165.673-.356.985-.57.167-.114.335-.125.45-.082l1.02.382a1.875 1.875 0 002.28-.819l.923-1.597a1.875 1.875 0 00-.432-2.385l-.84-.692c-.095-.078-.17-.229-.154-.43a7.614 7.614 0 000-1.139c-.016-.2.059-.352.153-.43l.84-.692c.708-.582.891-1.59.433-2.385l-.922-1.597a1.875 1.875 0 00-2.282-.818l-1.02.382c-.114.043-.282.031-.449-.083a7.49 7.49 0 00-.985-.57c-.183-.087-.277-.227-.297-.348l-.179-1.072a1.875 1.875 0 00-1.85-1.567h-1.843zM12 15.75a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z" clipRule="evenodd" />
                   </svg>
                   Comprehensive Data Collection
                 </dt>
@@ -233,6 +243,54 @@ export default function Home() {
                 </dd>
               </div>
             </dl>
+          </div>
+        </div>
+      </div>
+      
+      {/* AI Technician Feature */}
+      <div className="mx-auto mt-16 max-w-7xl">
+        <div className="rounded-2xl bg-gradient-to-r from-emerald-900/40 to-teal-900/40 p-8 ring-1 ring-emerald-700/30 overflow-hidden relative">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(16,185,129,0.1),transparent_70%)]"></div>
+          <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div className="max-w-2xl">
+              <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
+                Need help with your devices?
+              </h2>
+              <p className="mt-4 text-lg text-gray-300">
+                Chat with our AI Technician powered by Google Gemini 1.5 Flash. Get instant answers about your device specifications, troubleshooting tips, and recommendations.
+              </p>
+              <div className="mt-6">
+                <Link
+                  href="/ai-technician"
+                  className="inline-flex items-center rounded-md bg-emerald-600 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-emerald-500 transition-all duration-300 hover:shadow-emerald-500/30 hover:shadow-lg"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 2a10 10 0 1 0 10 10H12V2Z" />
+                    <path d="M12 2a10 10 0 0 1 10 10h-10V2Z" />
+                    <path d="M12 12v10" />
+                  </svg>
+                  Talk to AI Technician
+                </Link>
+              </div>
+            </div>
+            <div className="flex-shrink-0 w-full max-w-xs">
+              <div className="rounded-xl bg-gray-800/50 p-4 ring-1 ring-gray-700/30 shadow-lg">
+                <div className="flex items-start space-x-3">
+                  <div className="flex-shrink-0">
+                    <div className="h-10 w-10 rounded-full bg-emerald-600 flex items-center justify-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M12 2a10 10 0 1 0 10 10H12V2Z" />
+                        <path d="M12 2a10 10 0 0 1 10 10h-10V2Z" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <p className="text-sm font-medium text-white">AI Technician</p>
+                    <p className="text-sm text-gray-400">How can I help with your device today?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
