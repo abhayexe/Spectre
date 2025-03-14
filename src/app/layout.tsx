@@ -7,7 +7,7 @@ import Navbar from '@/components/Navbar';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Device Specs Dashboard',
+  title: 'Spectre-Device Specs Dashboard',
   description: 'View and manage device specifications',
 };
 
