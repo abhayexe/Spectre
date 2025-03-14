@@ -1,4 +1,4 @@
-// File: C:\Users\abhay\Desktop\mywebsites\next-app\src\app\ai-technician\page.tsx
+// File: C:\Users\abhay\Desktop\flutter\Spectre\src\app\ai-technician\page.tsx
 import * as entry from '../../../../src/app/ai-technician/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
