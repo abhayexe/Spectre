@@ -1,5 +1,5 @@
 # Spectre - Device Specs Dashboard
-
+[Live Demo](https://spectre-689l.vercel.app/)
 ![Spectre Logo](public/logo.png)
 
 ## Overview
