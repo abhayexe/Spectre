@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { createClient } from '@supabase/supabase-js';
@@ -43,7 +43,8 @@ const GEMINI_MODELS: GeminiModel[] = [
   }
 ];
 
-export default function AITechnician() {
+// Create a client component that uses useSearchParams
+function AITechnicianContent() {
   const [user, setUser] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [messages, setMessages] = useState<Message[]>([
@@ -530,5 +531,18 @@ export default function AITechnician() {
         </div>
       </footer>
     </div>
+  );
+}
+
+// Wrap the component that uses useSearchParams in a Suspense boundary
+export default function AITechnician() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gray-900 flex items-center justify-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-indigo-500"></div>
+      </div>
+    }>
+      <AITechnicianContent />
+    </Suspense>
   );
 }
